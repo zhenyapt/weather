@@ -1,0 +1,76 @@
+@import "./reset.css";
+
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body {
+  background: #282828;
+  font-family: "Inter", system-ui, sans-serif;
+}
+.weather {
+  width: 320px;
+  margin: 60px auto;
+  border-radius: 16px;
+  background: #000000;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form {
+  background: #fff;
+  height: 40px;
+  border-radius: 60px;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form__input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.form__btn {
+  min-width: 40px;
+  padding: 0px 5px;
+}
+.weather__info {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.weather__img {
+  width: 128px;
+}
+.weather__temp {
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.weather__city {
+  font-size: 24px;
+  line-height: 1.6;
+}
+.weather__details {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.details {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 0px 10px;
+}
+.details__img {
+  width: 32px;
+  grid-row: 1 / 3;
+}
+.details__value {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.details__title {
+  font-size: 14px;
+  line-height: 1.6;
+}
